@@ -1,0 +1,131 @@
+
+body{
+    /* 颜色拓展 */
+    --gradualGray:linear-gradient(45deg, #82828A, #59596c);
+    --golden:#FFFAC1;
+}
+
+
+
+/*背景色拓展*/
+.bg-theme-blue {
+    background-color: #3CA8FA;
+    color: var(--white);
+}
+.bg-custom-red{
+    background-color: #FF5756;
+    color: var(--white);
+}
+
+.bg-theme-green {
+    background-color: #09BB07;
+    color: var(--white);
+}
+
+.bg-theme-orange{
+    background-color: #F05D3F;
+    color: var(--white);
+}
+
+
+.bg-gradual-gray{
+    background-image: var(--gradualGray);
+    color: var(--golden);
+}
+
+
+.bg-custom-gradual-orange{
+    background-image: linear-gradient(45deg, #FD8D6C, #FD4C40);
+    color: var(--white);
+
+
+}
+/*金色渐变*/
+.bg-custom-gradual-golden{
+    background-image: linear-gradient(45deg, #CDA773, #F8E1C0,#E1C399,#ECD8BB);
+    /*background-image: linear-gradient(45deg, #CDA773, #F8E1C0,#E1C399,#ECD8BB);*/
+    color: #36343A;
+
+}
+
+/*前景色拓展*/
+.text-custom-red{
+    color:#FF5756;
+}
+
+/*暗金色*/
+.text-dark-golden{
+    color: #D8AE71;
+}
+
+/*自定义页面高度*/
+.cu-page{
+    height: 100vh;
+    font-size: 28upx;
+}
+
+/*定位*/
+.position-absolute{
+    position: absolute;
+    width: 100%;
+}
+.position-relative{
+    position: relative;
+}
+.position-fixed{
+    position: fixed;
+}
+
+/*封面*/
+.cover::after{
+    content: attr(data-index);
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: red;
+}
+
+/*字体*/
+.text-2xl {
+    font-size: 40upx !important;
+}
+.text-3xl {
+    font-size: 44upx !important;
+}
+.text-4xl {
+    font-size: 48upx !important;
+}
+.text-5xl {
+    font-size: 52upx !important;
+}
+
+
+/*内边距*/
+.padding-top-0{
+    padding-top: 0 !important;
+}
+.padding-btttom-0{
+    padding-top: 0 !important;
+}
+
+.padding-2xl {
+    padding: 60upx;
+}
+
+.padding-3xl {
+    padding: 70upx;
+}
+.padding-4xl {
+    padding: 80upx;
+}
+.padding-5xl {
+    padding: 90upx;
+}
+.padding-5xl {
+    padding: 100upx;
+}
+.padding-6xl {
+    padding: 110upx;
+}
+
+
