@@ -27,6 +27,13 @@ body{
     color: var(--white);
 }
 
+.bg-light-pink{
+background-color:#FFF1EB ;
+    color:#DE7D58;
+
+
+}
+
 
 .bg-gradual-gray{
     background-image: var(--gradualGray);
@@ -40,6 +47,7 @@ body{
 
 
 }
+
 /*金色渐变*/
 .bg-custom-gradual-golden{
     background-image: linear-gradient(45deg, #CDA773, #F8E1C0,#E1C399,#ECD8BB);
@@ -47,6 +55,19 @@ body{
     color: #36343A;
 
 }
+/*蓝色渐变*/
+.bg-custom-gradual-blue{
+    background-image: linear-gradient(45deg, #62C2FF, #608EFF);
+    color: var(--white);
+
+}
+
+
+.bg-custon-gradual-orange{
+    background-image: linear-gradient(45deg,#FB8745,#FF6C33);
+    color: white;
+}
+
 
 /*前景色拓展*/
 .text-custom-red{
@@ -126,6 +147,31 @@ body{
 }
 .padding-6xl {
     padding: 110upx;
+}
+
+
+
+/*table*/
+.table{
+    display: table;
+    width: 100%;
+    border-collapse:separate;
+    border-spacing: 45rpx;
+}
+.th{
+    display: table-header-group;
+}
+.tr{
+    display: table-row;
+    border-collapse:collapse;
+    /*padding: 20rpx;*/
+    /*height: 30px;*/
+}
+.td{
+    display: table-cell;
+    text-align: center;
+
+
 }
 
 

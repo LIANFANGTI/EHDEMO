@@ -2,7 +2,7 @@
     <view class="cu-modal" :class="show?'show':''"  @tap="handleModalClose" >
         <view class="cu-dialog" :style="{maxWidth: maxWidth }">
             <view class="cu-bar bg-white justify-end" v-if="!hideHeader">
-                <view class='content'>{{title}}</view>
+                <view class='content text-red text-bold'>{{title}}</view>
                 <view class='action' @click='hideModal'>
                     <text class='cuIcon-close text-red'></text>
                 </view>
@@ -10,12 +10,14 @@
             <view class='padding-xl bg-white'>
                 <slot></slot>
             </view>
-            <view class="cu-bar bg-white " v-if="!hideFooter">
+
+            <view class="cu-bar bg-white " v-if="!customFooter">
                 <view class='action margin-0 flex-sub text-green ' @click='hideModal'>
                     <view class='action margin-0 flex-sub  ' @click='onConfirm'>确定</view>
                     <view class='action margin-0 flex-sub text-gray solid-left' @click='onCancel' v-if="!hideCancel">取消</view>
                 </view>
             </view>
+            <slot name="footer"></slot>
             <view class="modal_close_area bg-white"></view>
         </view>
     </view>
@@ -29,6 +31,12 @@
                 show:false
             }
         },
+        created(){
+            console.log(`调试:Model组件加载成功`, this.$scopedSlots);
+
+            console.log(`调试:Slots`, this.$slots)
+        },
+
         props:{
            title:{
                type:String,
@@ -56,6 +64,9 @@
             }
         },
         computed:{
+            customFooter(){
+                return !!this.$slots.footer
+            }
 
         },
         watch:{

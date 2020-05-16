@@ -55,6 +55,7 @@
     "mini-types": "*",
     "miniprogram-api-typings": "^2.8.0-2",
     "postcss-comment": "^2.0.0",
+    "vue-svgicon": "^3.2.6",
     "vue-template-compiler": "^2.6.10"
   },
   "browserslist": [

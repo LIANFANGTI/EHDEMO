@@ -1,16 +1,16 @@
-# whale
+# 饿货外卖红包助手
 
-## Project setup
+## 项目运行
+### 1.依赖安装
 ```
-npm install
+npm install 
 ```
-
-### Compiles and hot-reloads for development
+### 2.开发热加载调试
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 3.编译发布
 ```
 npm run build
 ```

@@ -9,6 +9,22 @@
 			"style": {"navigationBarTitleText": "好友团"}
 		},
 		{
+			"path": "pages/index/poster",
+			"style": {"navigationBarTitleText": "招募店长"}
+		},
+		{
+			"path": "pages/income/index",
+			"style": {"navigationBarTitleText": "预估收益"}
+		},
+		{
+			"path": "pages/user/orders",
+			"style": {"navigationBarTitleText": "订单记录"}
+		},
+		{
+			"path": "pages/user/cashout",
+			"style": {"navigationBarTitleText": "提现"}
+		},
+		{
 			"path": "pages/user/index",
 			"style": {"navigationBarTitleText": "我的"}
 		}
@@ -25,10 +41,10 @@
 				"selectedIconPath": "static/tabbar/redpack-selected.png"
 			},
 			{
-				"pagePath": "pages/friend/index",
+				"pagePath": "pages/index/poster",
 				"iconPath": "static/tabbar/friend-normal.png",
 				"selectedIconPath": "static/tabbar/friend-selected.png",
-				"text": "好友团"
+				"text": "招募店长"
 			},
 			{
 
